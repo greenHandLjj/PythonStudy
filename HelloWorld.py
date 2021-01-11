@@ -1777,7 +1777,15 @@ git checkout dev
 git merge 合并分支 Fast-forward
 git branch -d dev
 
+分支命令到此为止
+git checkout -b <name> 创建并切换分支
+git branch <name> 创建分支
+git checkout <name> 切换分支
+git merge 合并分支
+git branch -d <name> 删除分支
+git branch -D <name> 强制删除分支
 
+git checkout -- <file> 这个是撤销修改 容易混淆需要单独记忆
 
 """
 
