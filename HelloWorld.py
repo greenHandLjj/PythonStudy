@@ -1745,5 +1745,6 @@ git checkout 分支切换命令
 git rm 删除命令
 
 我也修改了文件
+git push 上传命令
 """
 
