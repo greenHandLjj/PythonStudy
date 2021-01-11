@@ -1706,7 +1706,19 @@ git status 查看当前状态
 git diff 查看版本具体差异
 git add 添加文件到暂存区
 git commit -m <msg> 提交文件
+git log 查看历史记录
+git log --pretty=oneline 美化版本查看历史记录
 
+通过版本回退
+git reset --hard HEAD^
+在window平台，^会被当成换行符
+导致在命令行中 
+git reset --hard HEAD^ 中的^被忽略掉了，
+以下几种解决方式
+git reset --hard "HEAD^"
+git reset --hard HEAD^^
+git reset --hard HEAD~ 或者是 git reset --hard HEAD~1
+~后面的数字表示回退几，默认就是1
 """
 
 
