@@ -1693,5 +1693,20 @@
 # with pynput.keyboard.Listener(on_press=press) as listener:
 #   listener.join()
 
+# git好卡，
+# 坚持一个原则，理解为最重要的事
+
+# git 是用C开发的，就够了，Git分布式版本控制系统，集中式版本控制系统
+
+"""
+git init 初始化仓库
+git config --global user.name  查看当前全局使用的git名
+git config --global user.email 查看当前全局使用的email
+git status 查看当前状态
+git diff 查看版本具体差异
+git add 添加文件到暂存区
+git commit -m <msg> 提交文件
+
+"""
 
 
