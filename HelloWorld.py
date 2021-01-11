@@ -1719,6 +1719,22 @@ git reset --hard "HEAD^"
 git reset --hard HEAD^^
 git reset --hard HEAD~ 或者是 git reset --hard HEAD~1
 ~后面的数字表示回退几，默认就是1
+git reflog : 后悔药(查看命令历史，貌似是版本回退的命令历史)
+
+git log 查看历史
+git reflog 查看未来
+
+git 的核心，分布式版本控制系统，
+工作区和暂存区
+git 还有分支master 默认就是master
+
+git 难点就是分支上，还有HEAD指针
+git branch
+
+前面的git 2步曲，
+git add 执行的就是把文件添加到暂存区
+git commit 执行的就是把暂存区的文件提交到当前分支
+
 """
 
 
