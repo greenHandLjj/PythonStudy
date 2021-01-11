@@ -1746,5 +1746,38 @@ git rm 删除命令
 
 我也修改了文件
 git push 上传命令
+
+GitHup 就是提供Git仓库托管服务的
+
+由于本地仓库和git远程仓库之间的数据传输时通过ssh加密的
+所以需要设置 ssh-keygen -t rsa -C ‘youremail@exmaple.com’
+
+用户主目录找到这个文件夹 .ssh 
+C/user/Adxxx/.ssh
+
+id_rsa 私钥
+id_rsa.pub 公钥
+
+创建和合并分支 分支有什么用
+
+记住因为一次历史事件，默认分支已经从master 变为了 main
+分支有什么用 ？
+分支有什么用 ？
+分支有什么用 ？
+
+？ 为什么要创建分支
+
+下班前 提交更改 git push
+上班前 拉取最新 git pull
+
+git checkout -b dev 创建并切换分支
+git branch dev
+git checkout dev
+
+git merge 合并分支 Fast-forward
+git branch -d dev
+
+
+
 """
 
