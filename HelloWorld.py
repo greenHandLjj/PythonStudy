@@ -1795,5 +1795,8 @@ git credential-manager uninstall
 
 .git 中的config 文件夹， 多了个 helper
 
+git pull origin main 
+git push origin main
+
 """
 
