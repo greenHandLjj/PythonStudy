@@ -1737,6 +1737,10 @@ git commit 执行的就是把暂存区的文件提交到当前分支
 
 git 跟踪并管理的是修改，而不是文件
 
+git checkout -- <file> 丢弃工作区修改
+
+git checkout -- <file> 会让文件回到最近一次add 或 commit的状态
+
 
 """
 
