@@ -1787,5 +1787,11 @@ git branch -D <name> 强制删除分支
 
 git checkout -- <file> 这个是撤销修改 容易混淆需要单独记忆
 
+记录密码
+git config  credential.helper store
+
+删除密码
+git credential-manager uninstall
+
 """
 
