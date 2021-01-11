@@ -1741,6 +1741,7 @@ git checkout -- <file> 丢弃工作区修改
 
 git checkout -- <file> 会让文件回到最近一次add 或 commit的状态
 
-
+git checkout 分支切换命令
+git rm 删除命令
 """
 
