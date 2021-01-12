@@ -1824,6 +1824,15 @@ git checkout -b dev 创建分支并且切换
 git checkout dev 切换分支
 git branch dev 创建分支
 git branch -d dev 删除分支
+git tag name 给最近的一次commit 打tag
+git show tag 可以展示tag的详细信息
+git tag v0.9 f52462 这样可以给指定的commit打上tag
+git tag 有参数 -a 是 name -m 是 注释
+
+默认情况下 git push 命令并不会传送标签到远程仓库服务器上，在创建完标签后必须显式的推送标签到共享服务器上
+
+git push origin main tagname
+git push origin main --tags
 
 """
 
