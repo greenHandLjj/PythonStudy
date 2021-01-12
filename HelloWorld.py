@@ -1798,5 +1798,19 @@ git credential-manager uninstall
 git pull origin main 
 git push origin main
 
+查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
+
+解决冲突 就是git最麻烦的一点，这就是分水岭，一部分人停留在了git的初步使用，一个人能用git上传下拉，回退版本，但是一旦
+涉及团队协作，就导致冲突，无法解决
+git merge 
+
+git 的commit 和 tag
+tag就是指向tag的某个指针
+是一个容易记住的有意义的名字
+
+跟某个commit绑定在一起
+
+
 """
 
