@@ -1811,6 +1811,19 @@ tag就是指向tag的某个指针
 
 跟某个commit绑定在一起
 
+昨天的命令
+git init 初始化git仓库
+git config --global user.name
+git config --global user.email
+git add . 暂存更改
+git commit -m <msg> 提交
+git push 
+git pull
+git checkout -- . 丢弃修改
+git checkout -b dev 创建分支并且切换
+git checkout dev 切换分支
+git branch dev 创建分支
+git branch -d dev 删除分支
 
 """
 
