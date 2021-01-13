@@ -1698,152 +1698,159 @@
 
 # git 是用C开发的，就够了，Git分布式版本控制系统，集中式版本控制系统
 
-"""
-git init 初始化仓库
-git config --global user.name  查看当前全局使用的git名
-git config --global user.email 查看当前全局使用的email
-git status 查看当前状态
-git diff 查看版本具体差异
-git add 添加文件到暂存区
-git commit -m <msg> 提交文件
-git log 查看历史记录
-git log --pretty=oneline 美化版本查看历史记录
+# """
+# git init 初始化仓库
+# git config --global user.name  查看当前全局使用的git名
+# git config --global user.email 查看当前全局使用的email
+# git status 查看当前状态
+# git diff 查看版本具体差异
+# git add 添加文件到暂存区
+# git commit -m <msg> 提交文件
+# git log 查看历史记录
+# git log --pretty=oneline 美化版本查看历史记录
 
-通过版本回退
-git reset --hard HEAD^
-在window平台，^会被当成换行符
-导致在命令行中 
-git reset --hard HEAD^ 中的^被忽略掉了，
-以下几种解决方式
-git reset --hard "HEAD^"
-git reset --hard HEAD^^
-git reset --hard HEAD~ 或者是 git reset --hard HEAD~1
-~后面的数字表示回退几，默认就是1
-git reflog : 后悔药(查看命令历史，貌似是版本回退的命令历史)
+# 通过版本回退
+# git reset --hard HEAD^
+# 在window平台，^会被当成换行符
+# 导致在命令行中 
+# git reset --hard HEAD^ 中的^被忽略掉了，
+# 以下几种解决方式
+# git reset --hard "HEAD^"
+# git reset --hard HEAD^^
+# git reset --hard HEAD~ 或者是 git reset --hard HEAD~1
+# ~后面的数字表示回退几，默认就是1
+# git reflog : 后悔药(查看命令历史，貌似是版本回退的命令历史)
 
-git log 查看历史
-git reflog 查看未来
+# git log 查看历史
+# git reflog 查看未来
 
-git 的核心，分布式版本控制系统，
-工作区和暂存区
-git 还有分支master 默认就是master
+# git 的核心，分布式版本控制系统，
+# 工作区和暂存区
+# git 还有分支master 默认就是master
 
-git 难点就是分支上，还有HEAD指针
-git branch
+# git 难点就是分支上，还有HEAD指针
+# git branch
 
-前面的git 2步曲，
-git add 执行的就是把文件添加到暂存区
-git commit 执行的就是把暂存区的文件提交到当前分支
+# 前面的git 2步曲，
+# git add 执行的就是把文件添加到暂存区
+# git commit 执行的就是把暂存区的文件提交到当前分支
 
-git 跟踪并管理的是修改，而不是文件
+# git 跟踪并管理的是修改，而不是文件
 
-git checkout -- <file> 丢弃工作区修改
+# git checkout -- <file> 丢弃工作区修改
 
-git checkout -- <file> 会让文件回到最近一次add 或 commit的状态
+# git checkout -- <file> 会让文件回到最近一次add 或 commit的状态
 
-git checkout 分支切换命令
-git rm 删除命令
+# git checkout 分支切换命令
+# git rm 删除命令
 
-我也修改了文件
-git push 上传命令
+# 我也修改了文件
+# git push 上传命令
 
-GitHup 就是提供Git仓库托管服务的
+# GitHup 就是提供Git仓库托管服务的
 
-由于本地仓库和git远程仓库之间的数据传输时通过ssh加密的
-所以需要设置 ssh-keygen -t rsa -C ‘youremail@exmaple.com’
+# 由于本地仓库和git远程仓库之间的数据传输时通过ssh加密的
+# 所以需要设置 ssh-keygen -t rsa -C ‘youremail@exmaple.com’
 
-用户主目录找到这个文件夹 .ssh 
-C/user/Adxxx/.ssh
+# 用户主目录找到这个文件夹 .ssh 
+# C/user/Adxxx/.ssh
 
-id_rsa 私钥
-id_rsa.pub 公钥
+# id_rsa 私钥
+# id_rsa.pub 公钥
 
-创建和合并分支 分支有什么用
+# 创建和合并分支 分支有什么用
 
-记住因为一次历史事件，默认分支已经从master 变为了 main
-分支有什么用 ？
-分支有什么用 ？
-分支有什么用 ？
+# 记住因为一次历史事件，默认分支已经从master 变为了 main
+# 分支有什么用 ？
+# 分支有什么用 ？
+# 分支有什么用 ？
 
-？ 为什么要创建分支
+# ？ 为什么要创建分支
 
-下班前 提交更改 git push
-上班前 拉取最新 git pull
+# 下班前 提交更改 git push
+# 上班前 拉取最新 git pull
 
-git checkout -b dev 创建并切换分支
-git branch dev
-git checkout dev
+# git checkout -b dev 创建并切换分支
+# git branch dev
+# git checkout dev
 
-git merge 合并分支 Fast-forward
-git branch -d dev
+# git merge 合并分支 Fast-forward
+# git branch -d dev
 
-分支命令到此为止
-git checkout -b <name> 创建并切换分支
-git branch <name> 创建分支
-git checkout <name> 切换分支
-git merge 合并分支
-git branch -d <name> 删除分支
-git branch -D <name> 强制删除分支
+# 分支命令到此为止
+# git checkout -b <name> 创建并切换分支
+# git branch <name> 创建分支
+# git checkout <name> 切换分支
+# git merge 合并分支
+# git branch -d <name> 删除分支
+# git branch -D <name> 强制删除分支
 
-git checkout -- <file> 这个是撤销修改 容易混淆需要单独记忆
+# git checkout -- <file> 这个是撤销修改 容易混淆需要单独记忆
 
-记录密码
-git config  credential.helper store
+# 记录密码
+# git config  credential.helper store
 
-删除密码
-git credential-manager uninstall
+# 删除密码
+# git credential-manager uninstall
 
-.git 中的config 文件夹， 多了个 helper
+# .git 中的config 文件夹， 多了个 helper
 
-git pull origin main 
-git push origin main
+# git pull origin main 
+# git push origin main
 
-查看分支合并情况
-git log --graph --pretty=oneline --abbrev-commit
+# 查看分支合并情况
+# git log --graph --pretty=oneline --abbrev-commit
 
-解决冲突 就是git最麻烦的一点，这就是分水岭，一部分人停留在了git的初步使用，一个人能用git上传下拉，回退版本，但是一旦
-涉及团队协作，就导致冲突，无法解决
-git merge 
+# 解决冲突 就是git最麻烦的一点，这就是分水岭，一部分人停留在了git的初步使用，一个人能用git上传下拉，回退版本，但是一旦
+# 涉及团队协作，就导致冲突，无法解决
+# git merge 
 
-git 的commit 和 tag
-tag就是指向tag的某个指针
-是一个容易记住的有意义的名字
+# git 的commit 和 tag
+# tag就是指向tag的某个指针
+# 是一个容易记住的有意义的名字
 
-跟某个commit绑定在一起
+# 跟某个commit绑定在一起
 
-昨天的命令
-git init 初始化git仓库
-git config --global user.name
-git config --global user.email
-git add . 暂存更改
-git commit -m <msg> 提交
-git push 
-git pull
-git checkout -- . 丢弃修改
-git checkout -b dev 创建分支并且切换
-git checkout dev 切换分支
-git branch dev 创建分支
-git branch -d dev 删除分支
-git tag name 给最近的一次commit 打tag
-git show tag 可以展示tag的详细信息
-git tag v0.9 f52462 这样可以给指定的commit打上tag
-git tag 有参数 -a 是 name -m 是 注释
+# 昨天的命令
+# git init 初始化git仓库
+# git config --global user.name
+# git config --global user.email
+# git add . 暂存更改
+# git commit -m <msg> 提交
+# git push 
+# git pull
+# git checkout -- . 丢弃修改
+# git checkout -b dev 创建分支并且切换
+# git checkout dev 切换分支
+# git branch dev 创建分支
+# git branch -d dev 删除分支
+# git tag name 给最近的一次commit 打tag
+# git show tag 可以展示tag的详细信息
+# git tag v0.9 f52462 这样可以给指定的commit打上tag
+# git tag 有参数 -a 是 name -m 是 注释
 
-默认情况下 git push 命令并不会传送标签到远程仓库服务器上，在创建完标签后必须显式的推送标签到共享服务器上
+# 默认情况下 git push 命令并不会传送标签到远程仓库服务器上，在创建完标签后必须显式的推送标签到共享服务器上
 
-git push origin main tagname
-git push origin main --tags
+# git push origin main tagname
+# git push origin main --tags
 
-git tag -d tagname
+# git tag -d tagname
 
-如果标签已经推送到远程
-删除要先在本地删，然后push上去
-git tag -d v0.1
-// 这个奇怪的格式
-git push origin :refs/tags/v0.9
+# 如果标签已经推送到远程
+# 删除要先在本地删，然后push上去
+# git tag -d v0.1
+# // 这个奇怪的格式
+# git push origin :refs/tags/v0.9
 
-Gitee 和 GitHub
+# Gitee 和 GitHub
 
+# 能否进行同步更改呢？
 
-"""
+# git 学习结束了哦
+# python 学习得开始了呢
+# git remote 查看远程库
+# git remote -v 查看远程库的详情
+# git remote add <name> <url> 关联添加远程库
+
+# """
 
