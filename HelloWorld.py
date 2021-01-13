@@ -1834,5 +1834,16 @@ git tag 有参数 -a 是 name -m 是 注释
 git push origin main tagname
 git push origin main --tags
 
+git tag -d tagname
+
+如果标签已经推送到远程
+删除要先在本地删，然后push上去
+git tag -d v0.1
+// 这个奇怪的格式
+git push origin :refs/tags/v0.9
+
+Gitee 和 GitHub
+
+
 """
 
